@@ -1,0 +1,90 @@
+.item-wrapper-edit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+  gap: 1rem;
+  margin: 4rem 4rem 0 4rem;
+  padding: 2rem 0 6rem 0;
+  border-top: dotted 1px black;
+  border-bottom: 1px solid orange;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+#label-name {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: 2.4rem;
+}
+
+#input-name {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+#label-bottle {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#input-bottle {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+#label-measure {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#input-measure {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+#label-details {
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+#input-details {
+  grid-column: 1/4;
+  grid-row: 9/10;
+}
+
+.u-row-edit {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.btn-delete-edit {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  opacity: 0.5;
+}
+
+.starters-add {
+  grid-column: 1/2;
+  grid-row: 11/12;
+  height: 6rem;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.starters-add:hover {
+  cursor: pointer;
+}

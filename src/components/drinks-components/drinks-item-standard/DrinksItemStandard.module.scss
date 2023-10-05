@@ -1,0 +1,113 @@
+.starters-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr 1fr 1.5fr 1.5fr;
+  grid-template-rows: 8rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  gap: 1rem;
+}
+
+.starters-name {
+  font-size: 2.4rem;
+}
+
+.starters-details {
+  width: 100%;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}
+
+.starters-dietary,
+.starters-percentage,
+.starters-price {
+  font-size: 2rem;
+}
+
+.starters-dietary {
+  text-align: center;
+}
+
+.btn-delete,
+.btn-edit,
+.btn-delete-edit,
+.btn-edit-edit {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+  font-size: 2rem;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.btn-delete:hover,
+.btn-edit:hover,
+.btn-cancel-delete:hover,
+.btn-confirm-delete:hover,
+.btn-edit-edit:hover,
+.btn-cancel-edit:hover,
+.btn-confirm-edit:hover {
+  cursor: pointer;
+}
+
+.btn-cancel-delete,
+.btn-confirm-delete,
+.btn-cancel-edit,
+.btn-confirm-edit {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.btn-cancel-delete,
+.btn-cancel-edit {
+  color: red;
+  border: 1px solid red;
+}
+
+.btn-confirm-delete,
+.btn-confirm-edit {
+  color: green;
+  border: 1px solid green;
+  margin-right: 1rem;
+}
+
+/* Edit Stuff */
+
+.starters-wrapper-edit {
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr 1fr 1.5fr 1.5fr;
+  grid-template-rows: 4rem 4rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 2.4rem;
+}
+
+.btn-delete-edit {
+  opacity: 0.5;
+  grid-row: 2/3;
+  grid-column: 6/7;
+}
+.btn-edit-edit {
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+
+.u-row-edit {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}

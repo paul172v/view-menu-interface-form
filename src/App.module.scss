@@ -1,0 +1,57 @@
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+
+.frame {
+  width: 100rem;
+  min-height: 80vh;
+  margin-top: 8rem;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding-bottom: 8rem;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 6rem;
+}
+
+.u-row {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-page-select {
+  background-color: orange;
+  color: white;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border: none;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+
+.button-page-select:hover {
+  cursor: pointer;
+}
+
+.u-col {
+  display: flex;
+  flex-direction: column;
+}
