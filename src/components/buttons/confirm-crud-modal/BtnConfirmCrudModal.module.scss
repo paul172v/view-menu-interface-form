@@ -1,0 +1,17 @@
+.button {
+  background-color: orange;
+  color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 2rem;
+  width: 12rem;
+  padding: 1rem 0;
+  border: 0px transparent;
+}
+
+.button:hover {
+  cursor: pointer;
+}

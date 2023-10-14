@@ -1,0 +1,15 @@
+.button {
+  background-color: transparent;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 2rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}

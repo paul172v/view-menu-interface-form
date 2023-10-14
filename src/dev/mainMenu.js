@@ -35,8 +35,8 @@ exports.startersArr = [
   },
 ];
 
-//// Sharer
-exports.sharerArr = [
+//// Sharers
+exports.sharersArr = [
   {
     name: "Argyll Sharer",
     dietary: ["vgo"],
@@ -54,8 +54,8 @@ exports.mainsArr = [
     details:
       "Macaroni in a creamy three cheese sauce topped with a parmesan crumb served with a fresh dressed side salad and garlic ciabatta or chips",
     add: [
-      ["Streaky bacon", 2.5],
-      ["Chicken", 3.0],
+      { name: "Streaky bacon", price: 2.5 },
+      { name: "Chicken", price: 3 },
     ],
     price: 13.5,
   },
@@ -83,8 +83,8 @@ exports.mainsArr = [
     details:
       "Vegetarian red Thai curry with both a sweet and salty taste. Served with vegan friendly garlic & coriander naan bread, basmati rice, mini onion bhaji and mango chutney",
     add: [
-      ["Chicken", 3.0],
-      ["King Prawns", 5.0],
+      { name: "Chicken", price: 3 },
+      { name: "King Prawns", price: 1 },
     ],
     price: 12.95,
   },
@@ -121,7 +121,7 @@ exports.steaksArr = [
 ];
 
 //// Steak Sides
-exports.steaksSidesArr = [["Peppercorn sauce", 2.45]];
+exports.steaksSidesArr = [{ name: "Peppercorn sauce", price: 2.45 }];
 
 //// Burgers
 exports.burgersArr = [
@@ -136,8 +136,8 @@ exports.burgersArr = [
     details:
       "Served in a brioche bun with Batavia leaves, sliced tomato, dill pickle, crunchy slaw, beer battered onion rings, sriracha mayo and fries",
     add: [
-      ["Monterey Jack", 1],
-      ["Spicy Mexican Cheese", 1],
+      { name: "Monterey Jack", price: 1 },
+      { name: "Spicy Mexican Cheese", price: 1 },
     ],
     price: 12.95,
   },
@@ -147,8 +147,8 @@ exports.burgersArr = [
       "Shredded Chick'n coated in a crunchy Louisiana seasoned cornbread crumb, served in a gourmet bun with Batavia leaves, sliced tomato, dill pickle, vegan cheddar cheese, topped with panko coated onion rings. Served with fries and sriracha vegan mayo on the side",
     dietary: ["v", "vgo"],
     add: [
-      ["Monterey Jack", 1],
-      ["Spicy Mexican Cheese", 1],
+      { name: "Monterey Jack", price: 1 },
+      { name: "Spicy Mexican Cheese", price: 1 },
     ],
     price: 14.95,
   },
@@ -209,8 +209,8 @@ exports.dessertsArr = [
     details: "Award winning Scottish Ice Cream",
     price: 0,
     scoops: [
-      ["2 Scoops", 4.5],
-      ["3 Scoops", 6.95],
+      { amount: 2, price: 4.5 },
+      { amount: 3, price: 6.95 },
     ],
   },
 ];
