@@ -3,13 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 
-import { ModalActiveContextProvider } from "./context/modal-context";
+import { ModalContextProvider } from "./context/modal-context";
+import { MainMenuContextProvider } from "./context/main-menu-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ModalActiveContextProvider>
-      <App />
-    </ModalActiveContextProvider>
+    <ModalContextProvider>
+      <MainMenuContextProvider>
+        <App />
+      </MainMenuContextProvider>
+    </ModalContextProvider>
   </React.StrictMode>
 );

@@ -5,11 +5,12 @@ import classes from "./BtnOpenAddItem.module.scss";
 import modalContext from "../../../context/modal-context";
 
 const BtnOpenAddItem = (props) => {
-  const ctx = useContext(modalContext);
+  const modalCtx = useContext(modalContext);
 
   const goToEditModal = () => {
-    ctx.selectModalTypeHandler("PostStandardItem");
-    ctx.turnOnModal();
+    modalCtx.setModalTypeHandler(props.type);
+    modalCtx.setFetchUrlHandler(props.url);
+    modalCtx.turnOnModalHandler();
   };
 
   return (

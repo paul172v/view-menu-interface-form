@@ -8,14 +8,21 @@ import MainMenu from "./pages/main-menu/MainMenu";
 import KidsMenu from "./pages/kids-menu/KidsMenu";
 import DrinksMenu from "./pages/drinks-menu/DrinksMenu";
 
-import ModalBackground from "./components/modal/modal-background/ModalBackground";
-import ModalEditStandardItem from "./components/modal/main-menu/edit--standard-item/ModalEditStandardItem";
-import ModalPostStandardItem from "./components/modal/main-menu/post--standard-item/ModalPostStandardItem";
+import ModalBackground from "./components/modals/modal-background/ModalBackground";
+import ModalDeleteItem from "./components/modals/delete-item/ModalDeleteItem";
+import ModalEditStandardItem from "./components/modals/main-menu/edit--standard-item/ModalEditStandardItem";
+import ModalPostStandardItem from "./components/modals/main-menu/post--standard-item/ModalPostStandardItem";
+import ModalEditStandardItemWithAdds from "./components/modals/main-menu/edit--standard-item-with-adds/ModalEditStandardItemWithAdds";
+import ModalPostStandardItemWithAdds from "./components/modals/main-menu/post--standard-item-with-adds/ModalPostStandardItemWithAdds";
+import ModalEditStandardItemNoDetails from "./components/modals/main-menu/edit--standard-item-no-details/ModalEditStandardItemNoDetails";
+import ModalPostStandardItemNoDetails from "./components/modals/main-menu/post--standard-item-no-details/ModalPostStandardItemNoDetails";
+import ModalEditStandardItemWithScoops from "./components/modals/main-menu/edit-standard-item-with-scoops/ModalEditStandardItemWithScoops";
+import ModalPostStandardItemWithScoops from "./components/modals/main-menu/post--standard-item-with-scoops/ModalPostStandardItemWithScoops";
 
 import BtnPageSelect from "./components/buttons/page-select/BtnPageSelect";
 
 function App() {
-  const [page, setPage] = useState("main-menu");
+  const [page, setPage] = useState(null);
 
   const ctx = useContext(modalContext);
 
@@ -60,15 +67,57 @@ function App() {
           document.getElementById("modal-root")
         )}
       {ctx.modalActive === true &&
+        ctx.modalType === "DeleteItem" &&
+        ReactDOM.createPortal(
+          <ModalDeleteItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
         ctx.modalType === "EditStandardItem" &&
         ReactDOM.createPortal(
           <ModalEditStandardItem />,
           document.getElementById("modal-root")
         )}
       {ctx.modalActive === true &&
+        ctx.modalType === "EditStandardItemWithAdds" &&
+        ReactDOM.createPortal(
+          <ModalEditStandardItemWithAdds />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditStandardItemNoDetails" &&
+        ReactDOM.createPortal(
+          <ModalEditStandardItemNoDetails />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditStandardItemWithScoops" &&
+        ReactDOM.createPortal(
+          <ModalEditStandardItemWithScoops />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
         ctx.modalType === "PostStandardItem" &&
         ReactDOM.createPortal(
           <ModalPostStandardItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostStandardItemWithAdds" &&
+        ReactDOM.createPortal(
+          <ModalPostStandardItemWithAdds />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostStandardItemNoDetails" &&
+        ReactDOM.createPortal(
+          <ModalPostStandardItemNoDetails />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostStandardItemWithScoops" &&
+        ReactDOM.createPortal(
+          <ModalPostStandardItemWithScoops />,
           document.getElementById("modal-root")
         )}
     </React.Fragment>

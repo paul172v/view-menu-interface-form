@@ -1,0 +1,27 @@
+.component-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content 4rem;
+  gap: 0 4rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .component-wrapper {
+    margin-bottom: 12rem;
+  }
+}
+
+.name,
+.dietary,
+.price {
+  font-size: 1.8rem;
+}
+
+.name {
+  font-weight: 800;
+}
+
+.details {
+  font-size: 1.4rem;
+}

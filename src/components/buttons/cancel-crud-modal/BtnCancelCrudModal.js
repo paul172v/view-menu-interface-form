@@ -8,7 +8,7 @@ const BtnCancelCrudModal = () => {
   const ctx = useContext(modalContext);
 
   return (
-    <button className={classes.button} onClick={ctx.turnOffModal}>
+    <button className={classes.button} onClick={ctx.turnOffModalHandler}>
       Cancel
     </button>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 
-import classes from "./standardItem--Headings.module.scss";
+import classes from "./ItemHeadings.module.scss";
 
-const StandardItemHeadings = () => {
+const ItemHeadings = () => {
   return (
     <div className={classes["component-wrapper"]}>
       <h3 className={classes.h3} id={classes.name}>
@@ -21,4 +21,4 @@ const StandardItemHeadings = () => {
   );
 };
 
-export default StandardItemHeadings;
+export default ItemHeadings;
