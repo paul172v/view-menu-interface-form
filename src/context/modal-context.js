@@ -7,6 +7,8 @@ const ModalContext = React.createContext({
   turnOffModalHandler: () => {},
   modalType: null,
   setModalTypeHandler: () => {},
+  menuType: null,
+  setMenuTypeHandler: () => {},
   fetchUrl: null,
   setFetchUrlHandler: () => {},
   itemName: null,
@@ -41,6 +43,7 @@ const ModalContext = React.createContext({
 export const ModalContextProvider = (props) => {
   const [modalActive, setModalActive] = useState(false);
   const [modalType, setModalType] = useState(null);
+  const [menuType, setMenuType] = useState(null);
   const [fetchUrl, setFetchUrl] = useState(null);
   const [itemName, setItemName] = useState(null);
   const [itemDetails, setItemDetails] = useState(null);
@@ -66,6 +69,10 @@ export const ModalContextProvider = (props) => {
 
   const setModalTypeHandler = (type) => {
     setModalType(type);
+  };
+
+  const setMenuTypeHandler = (type) => {
+    setMenuType(type);
   };
 
   const setFetchUrlHandler = (url) => {
@@ -132,6 +139,8 @@ export const ModalContextProvider = (props) => {
         turnOffModalHandler,
         modalType,
         setModalTypeHandler,
+        menuType,
+        setMenuTypeHandler,
         fetchUrl,
         setFetchUrlHandler,
         itemName,

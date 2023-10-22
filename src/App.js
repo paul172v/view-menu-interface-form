@@ -13,11 +13,13 @@ import ModalDeleteItem from "./components/modals/delete-item/ModalDeleteItem";
 import ModalEditStandardItem from "./components/modals/main-menu/edit--standard-item/ModalEditStandardItem";
 import ModalPostStandardItem from "./components/modals/main-menu/post--standard-item/ModalPostStandardItem";
 import ModalEditStandardItemWithAdds from "./components/modals/main-menu/edit--standard-item-with-adds/ModalEditStandardItemWithAdds";
+import ModalEditMakeAMealItem from "./components/modals/kids-menu/edit--make-a-meal-item/ModalEditMakeAMealItem";
 import ModalPostStandardItemWithAdds from "./components/modals/main-menu/post--standard-item-with-adds/ModalPostStandardItemWithAdds";
 import ModalEditStandardItemNoDetails from "./components/modals/main-menu/edit--standard-item-no-details/ModalEditStandardItemNoDetails";
 import ModalPostStandardItemNoDetails from "./components/modals/main-menu/post--standard-item-no-details/ModalPostStandardItemNoDetails";
 import ModalEditStandardItemWithScoops from "./components/modals/main-menu/edit-standard-item-with-scoops/ModalEditStandardItemWithScoops";
 import ModalPostStandardItemWithScoops from "./components/modals/main-menu/post--standard-item-with-scoops/ModalPostStandardItemWithScoops";
+import ModalPostMakeAMealItem from "./components/modals/kids-menu/post--standard-item/ModalPostStandardItem";
 
 import BtnPageSelect from "./components/buttons/page-select/BtnPageSelect";
 
@@ -97,6 +99,12 @@ function App() {
           document.getElementById("modal-root")
         )}
       {ctx.modalActive === true &&
+        ctx.modalType === "EditMakeAMealItem" &&
+        ReactDOM.createPortal(
+          <ModalEditMakeAMealItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
         ctx.modalType === "PostStandardItem" &&
         ReactDOM.createPortal(
           <ModalPostStandardItem />,
@@ -118,6 +126,12 @@ function App() {
         ctx.modalType === "PostStandardItemWithScoops" &&
         ReactDOM.createPortal(
           <ModalPostStandardItemWithScoops />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostMakeAMealItem" &&
+        ReactDOM.createPortal(
+          <ModalPostMakeAMealItem />,
           document.getElementById("modal-root")
         )}
     </React.Fragment>

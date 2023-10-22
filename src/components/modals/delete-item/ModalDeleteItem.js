@@ -4,12 +4,14 @@ import classes from "./ModalDeleteItem.module.scss";
 
 import modalContext from "../../../context/modal-context";
 import mainMenuContext from "../../../context/main-menu-context";
+import kidsMenuContext from "../../../context/kids-menu-context";
 
 import BtnCancelCrudModal from "../../buttons/cancel-crud-modal/BtnCancelCrudModal";
 
 const ModalDeleteItem = (props) => {
   const modalCtx = useContext(modalContext);
   const mainMenuCtx = useContext(mainMenuContext);
+  const kidsMenuCtx = useContext(kidsMenuContext);
 
   const url = `${modalCtx.fetchUrl}/${modalCtx.itemId}`;
 
@@ -29,7 +31,8 @@ const ModalDeleteItem = (props) => {
       })
       .then((data) => {
         console.log("Resource successfully deleted:", data); // Handle the response data (if any)
-        mainMenuCtx.getMenusHandler();
+        modalCtx.menuType === "main-menu" && mainMenuCtx.getMenusHandler();
+        modalCtx.menuType === "kids-menu" && kidsMenuCtx.getMenusHandler();
         modalCtx.turnOffModalHandler();
       })
       .catch((error) => {

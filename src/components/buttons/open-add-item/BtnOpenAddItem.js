@@ -7,14 +7,15 @@ import modalContext from "../../../context/modal-context";
 const BtnOpenAddItem = (props) => {
   const modalCtx = useContext(modalContext);
 
-  const goToEditModal = () => {
+  const goToPostModal = () => {
     modalCtx.setModalTypeHandler(props.type);
     modalCtx.setFetchUrlHandler(props.url);
+    modalCtx.setMenuTypeHandler(props.menuType);
     modalCtx.turnOnModalHandler();
   };
 
   return (
-    <button className={classes["button"]} onClick={goToEditModal}>
+    <button className={classes["button"]} onClick={goToPostModal}>
       Add Item
     </button>
   );

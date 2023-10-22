@@ -41,12 +41,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/starters"
                     key={item._id}
                     modalType="EditStandardItem"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/starters"
                 type="PostStandardItem"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -64,12 +66,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/sharers"
                     key={item._id}
                     modalType="EditStandardItem"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/sharers"
                 type="PostStandardItem"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -91,12 +95,14 @@ const MainMenu = () => {
                     add1Price={item.add[0] ? item.add[0].price : ""}
                     add2Name={item.add[1] ? item.add[1].name : ""}
                     add2Price={item.add[1] ? item.add[1].price : ""}
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/mains"
                 type="PostStandardItemWithAdds"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -113,12 +119,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/salads"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/salads"
                 type="PostStandardItemNoDetails"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -135,12 +143,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/steaks"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/steaks"
                 type="PostStandardItemNoDetails"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -157,12 +167,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/steak-sides"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/steak-sides"
                 type="PostStandardItemNoDetails"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -184,12 +196,14 @@ const MainMenu = () => {
                     add1Price={item.add[0] ? item.add[0].price : ""}
                     add2Name={item.add[1] ? item.add[1].name : ""}
                     add2Price={item.add[1] ? item.add[1].price : ""}
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/burgers"
                 type="PostStandardItemWithAdds"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -206,12 +220,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/sides"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/sides"
                 type="PostStandardItemNoDetails"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -229,12 +245,14 @@ const MainMenu = () => {
                     url="http://127.0.0.1:5000/api/v1/main-menu/loaded-fries"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/loaded-fries"
                 type="PostStandardItemNoDetails"
+                menuType="main-menu"
               />
             </section>
             <section className={classes.section}>
@@ -256,12 +274,14 @@ const MainMenu = () => {
                     scoops1Price={item.scoops[0] ? item.scoops[0].price : ""}
                     scoops2Amount={item.scoops[1] ? item.scoops[1].amount : ""}
                     scoops2Price={item.scoops[1] ? item.scoops[1].amount : ""}
+                    menuType="main-menu"
                   />
                 );
               })}
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/main-menu/desserts"
                 type="PostStandardItemWithScoops"
+                menuType="main-menu"
               />
             </section>
           </React.Fragment>

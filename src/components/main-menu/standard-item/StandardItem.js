@@ -23,8 +23,14 @@ const StandardItem = (props) => {
         price={props.price}
         itemId={props.itemId}
         modalType={props.modalType}
+        menuType={props.menuType}
       />
-      <BtnOpenDeleteItem label="Delete" url={props.url} itemId={props.itemId} />
+      <BtnOpenDeleteItem
+        label="Delete"
+        url={props.url}
+        itemId={props.itemId}
+        menuType={props.menuType}
+      />
     </div>
   );
 };

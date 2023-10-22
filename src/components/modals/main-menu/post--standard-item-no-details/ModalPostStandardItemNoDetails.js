@@ -4,6 +4,7 @@ import classes from "./ModalPostStandardItemNoDetails.module.scss";
 
 import modalContext from "../../../../context/modal-context";
 import mainMenuContext from "../../../../context/main-menu-context";
+import kidsMenuContext from "../../../../context/kids-menu-context";
 
 import BtnConfirmCrudModal from "../../../buttons/confirm-crud-modal/BtnConfirmCrudModal";
 import BtnCancelCrudModal from "../../../buttons/cancel-crud-modal/BtnCancelCrudModal";
@@ -11,6 +12,7 @@ import BtnCancelCrudModal from "../../../buttons/cancel-crud-modal/BtnCancelCrud
 const ModalPostStandardItemNoDetails = (props) => {
   const modalCtx = useContext(modalContext);
   const mainMenuCtx = useContext(mainMenuContext);
+  const kidsMenuCtx = useContext(kidsMenuContext);
 
   const inputtedName = useRef();
   const inputtedDietary = useRef();
@@ -47,7 +49,8 @@ const ModalPostStandardItemNoDetails = (props) => {
       })
       .then((responseData) => {
         console.log("Response from server:", responseData);
-        mainMenuCtx.getMenusHandler();
+        modalCtx.menuType === "main-menu" && mainMenuCtx.getMenusHandler();
+        modalCtx.menuType === "kids-menu" && kidsMenuCtx.getMenusHandler();
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -78,7 +81,7 @@ const ModalPostStandardItemNoDetails = (props) => {
           form="form"
           ref={inputtedDietary}
         >
-          <option value="none" default={true}>
+          <option value="" default={true}>
             No Dietary Requirements
           </option>
           <option value="gfo">Gluten Free</option>

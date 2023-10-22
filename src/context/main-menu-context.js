@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer } from "react";
 
 const MainMenuContext = React.createContext({
   state: null,
@@ -57,8 +57,8 @@ export const MainMenuContextProvider = (props) => {
   const [state, dispatch] = useReducer(reducer, initState);
 
   ////// Fetch request to get menus
-  const getMenusHandler = () =>
-    fetch("http://127.0.0.1:5000/api/v1/main-menu/get-every-array", {
+  const getMenusHandler = async () =>
+    await fetch("http://127.0.0.1:5000/api/v1/main-menu/get-every-array", {
       method: "GET", // Corrected here
       headers: {
         // Corrected here

@@ -10,6 +10,7 @@ const BtnOpenEditModal = (props) => {
   const goToEditModal = () => {
     modalCtx.setItemIdHandler(props.itemId);
     modalCtx.setFetchUrlHandler(props.url);
+    modalCtx.setMenuTypeHandler(props.menuType);
     props.modalType === "EditStandardItem" &&
       modalCtx.setModalTypeHandler("EditStandardItem");
     props.modalType === "EditStandardItemWithAdds" &&
@@ -18,6 +19,8 @@ const BtnOpenEditModal = (props) => {
       modalCtx.setModalTypeHandler("EditStandardItemNoDetails");
     props.modalType === "EditStandardItemWithScoops" &&
       modalCtx.setModalTypeHandler("EditStandardItemWithScoops");
+    props.modalType === "EditMakeAMealItem" &&
+      modalCtx.setModalTypeHandler("EditMakeAMealItem");
     modalCtx.turnOnModalHandler();
 
     props.name && modalCtx.setItemNameHandler(props.name);

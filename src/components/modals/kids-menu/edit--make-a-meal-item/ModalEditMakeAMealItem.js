@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 
-import classes from "./ModalEditStandardItem.module.scss";
+import classes from "./ModalEditMakeAMealItem.module.scss";
 
 import modalContext from "../../../../context/modal-context";
 import mainMenuContext from "../../../../context/main-menu-context";
@@ -9,29 +9,24 @@ import kidsMenuContext from "../../../../context/kids-menu-context";
 import BtnConfirmCrudModal from "../../../buttons/confirm-crud-modal/BtnConfirmCrudModal";
 import BtnCancelCrudModal from "../../../buttons/cancel-crud-modal/BtnCancelCrudModal";
 
-const ModalEditStandardItem = (props) => {
+const MakeAMealItem = (props) => {
   const modalCtx = useContext(modalContext);
   const mainMenuCtx = useContext(mainMenuContext);
   const kidsMenuCtx = useContext(kidsMenuContext);
 
   const inputtedName = useRef();
-  const inputtedDetails = useRef();
   const inputtedDietary = useRef();
-  const inputtedPrice = useRef();
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
 
     const nameValue = inputtedName.current.value;
-    const detailsValue = inputtedDetails.current.value;
     const dietaryArr = inputtedDietary.current.value.split(",");
-    const priceValue = inputtedPrice.current.value;
 
     const dataToSend = {
       name: nameValue,
-      details: detailsValue,
+
       dietary: dietaryArr,
-      price: priceValue,
     };
 
     const requestOptions = {
@@ -76,16 +71,6 @@ const ModalEditStandardItem = (props) => {
           defaultValue={modalCtx.itemName}
           ref={inputtedName}
         />
-        <label className={classes.label} htmlFor="input-details">
-          Details
-        </label>
-        <input
-          className={classes.input}
-          type="text"
-          name="input-details"
-          defaultValue={modalCtx.itemDetails}
-          ref={inputtedDetails}
-        />
         <label className={classes.label} htmlFor="input-dietary">
           Dietary
         </label>
@@ -110,17 +95,6 @@ const ModalEditStandardItem = (props) => {
             Gluten Free + Vegetarian + Vegan Option
           </option>
         </select>
-        <label className={classes.label} htmlFor="input-price">
-          Price
-        </label>
-        <input
-          className={classes.input}
-          name="input-price"
-          type="number"
-          step=".01"
-          defaultValue={modalCtx.itemPrice}
-          ref={inputtedPrice}
-        />
         <BtnConfirmCrudModal />
       </form>
       <BtnCancelCrudModal />
@@ -128,4 +102,4 @@ const ModalEditStandardItem = (props) => {
   );
 };
 
-export default ModalEditStandardItem;
+export default MakeAMealItem;

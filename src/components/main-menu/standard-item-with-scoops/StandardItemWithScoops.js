@@ -27,8 +27,14 @@ const StandardItemWithScoops = (props) => {
         scoops2Amount={props.scoops2Amount}
         scoops2Price={props.scoops2Price}
         modalType={props.modalType}
+        menuType={props.menuType}
       />
-      <BtnOpenDeleteItem label="Delete" url={props.url} itemId={props.itemId} />
+      <BtnOpenDeleteItem
+        label="Delete"
+        url={props.url}
+        itemId={props.itemId}
+        menuType={props.menuType}
+      />
       <div className={classes["scoops-row"]}>
         <p className={classes.scoops}>
           {props.scoops1Amount !== null &&

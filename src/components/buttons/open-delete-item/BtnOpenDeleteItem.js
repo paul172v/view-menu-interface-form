@@ -10,6 +10,7 @@ const BtnDeleteItem = (props) => {
   const openDeleteItemHandler = () => {
     modalCtx.setItemIdHandler(props.itemId);
     modalCtx.setFetchUrlHandler(props.url);
+    modalCtx.setMenuTypeHandler(props.menuType);
     modalCtx.setModalTypeHandler("DeleteItem");
     modalCtx.turnOnModalHandler();
   };
