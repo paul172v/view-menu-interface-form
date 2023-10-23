@@ -27,6 +27,10 @@ const ModalContext = React.createContext({
   itemPint: null,
   itemHalfPint: null,
   itemPercentage: null,
+  itemCountry: null,
+  itemBottle: null,
+  itemMl250: null,
+  itemMl175: null,
 
   setItemNameHandler: () => {},
   setItemDetailsHandler: () => {},
@@ -44,6 +48,10 @@ const ModalContext = React.createContext({
   setItemPintHandler: () => {},
   setItemHalfPintHandler: () => {},
   setItemPercentageHandler: () => {},
+  setItemCountryHandler: () => {},
+  setItemBottleHandler: () => {},
+  setItemMl250Handler: () => {},
+  setItemMl175Handler: () => {},
 });
 
 export const ModalContextProvider = (props) => {
@@ -67,6 +75,10 @@ export const ModalContextProvider = (props) => {
   const [itemPint, setItemPint] = useState(null);
   const [itemHalfPint, setItemHalfPint] = useState(null);
   const [itemPercentage, setItemPercentage] = useState(null);
+  const [itemCountry, setItemCountry] = useState(null);
+  const [itemBottle, setItemBottle] = useState(null);
+  const [itemMl250, setItemMl250] = useState(null);
+  const [itemMl175, setItemMl175] = useState(null);
 
   const turnOnModalHandler = () => {
     setModalActive(true);
@@ -152,6 +164,22 @@ export const ModalContextProvider = (props) => {
     setItemPercentage(percentage);
   };
 
+  const setItemCountryHandler = (country) => {
+    setItemCountry(country);
+  };
+
+  const setItemBottleHandler = (bottle) => {
+    setItemBottle(bottle);
+  };
+
+  const setItemMl250Handler = (ml250) => {
+    setItemMl250(ml250);
+  };
+
+  const setItemMl175Handler = (ml175) => {
+    setItemMl175(ml175);
+  };
+
   return (
     <ModalContext.Provider
       value={{
@@ -180,6 +208,10 @@ export const ModalContextProvider = (props) => {
         itemPint,
         itemHalfPint,
         itemPercentage,
+        itemCountry,
+        itemBottle,
+        itemMl250,
+        itemMl175,
         setItemNameHandler,
         setItemDetailsHandler,
         setItemDietaryHandler,
@@ -196,6 +228,10 @@ export const ModalContextProvider = (props) => {
         setItemPintHandler,
         setItemHalfPintHandler,
         setItemPercentageHandler,
+        setItemCountryHandler,
+        setItemBottleHandler,
+        setItemMl250Handler,
+        setItemMl175Handler,
       }}
     >
       {props.children}

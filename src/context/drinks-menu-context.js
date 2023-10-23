@@ -15,6 +15,12 @@ const initState = {
   cocktailsArr: null,
   frozenCocktailsArr: null,
   vodkaArr: null,
+  spiritsArr: null,
+  shootersArr: null,
+  maltsArr: null,
+  redWineArr: null,
+  roseWineArr: null,
+  whiteWineArr: null,
 };
 
 const reducer = (state, { type, value }) => {
@@ -38,6 +44,18 @@ const reducer = (state, { type, value }) => {
       return { ...state, frozenCocktailsArr: value };
     case "updateVodkaArr":
       return { ...state, vodkaArr: value };
+    case "updateSpiritsArr":
+      return { ...state, spiritsArr: value };
+    case "updateShootersArr":
+      return { ...state, shootersArr: value };
+    case "updateMaltsArr":
+      return { ...state, maltsArr: value };
+    case "updateRedWineArr":
+      return { ...state, redWineArr: value };
+    case "updateRoseWineArr":
+      return { ...state, roseWineArr: value };
+    case "updateWhiteWineArr":
+      return { ...state, whiteWineArr: value };
 
     default:
       throw new Error();
@@ -76,6 +94,12 @@ export const DrinksMenuContextProvider = (props) => {
           dataObj.payload.data.frozenCocktailsArr
         );
         updateVodkaArrHandler(dataObj.payload.data.vodkaArr);
+        updateSpiritsArrHandler(dataObj.payload.data.spiritsArr);
+        updateShootersArrHandler(dataObj.payload.data.shootersArr);
+        updateMaltsArrHandler(dataObj.payload.data.maltsArr);
+        updateRedWineArrHandler(dataObj.payload.data.redWineArr);
+        updateRoseWineArrHandler(dataObj.payload.data.roseWineArr);
+        updateWhiteWineArrHandler(dataObj.payload.data.whiteWineArr);
 
         setMenusLoadedHandler(true);
       })
@@ -107,6 +131,24 @@ export const DrinksMenuContextProvider = (props) => {
 
   const updateVodkaArrHandler = (arr) =>
     dispatch({ type: "updateVodkaArr", value: arr });
+
+  const updateSpiritsArrHandler = (arr) =>
+    dispatch({ type: "updateSpiritsArr", value: arr });
+
+  const updateShootersArrHandler = (arr) =>
+    dispatch({ type: "updateShootersArr", value: arr });
+
+  const updateMaltsArrHandler = (arr) =>
+    dispatch({ type: "updateMaltsArr", value: arr });
+
+  const updateRedWineArrHandler = (arr) =>
+    dispatch({ type: "updateRedWineArr", value: arr });
+
+  const updateRoseWineArrHandler = (arr) =>
+    dispatch({ type: "updateRoseWineArr", value: arr });
+
+  const updateWhiteWineArrHandler = (arr) =>
+    dispatch({ type: "updateWhiteWineArr", value: arr });
 
   return (
     <DrinksMenuContext.Provider

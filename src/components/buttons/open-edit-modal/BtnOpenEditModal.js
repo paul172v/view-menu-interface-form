@@ -41,6 +41,10 @@ const BtnOpenEditModal = (props) => {
     props.pint && modalCtx.setItemPintHandler(props.pint);
     props.halfPint && modalCtx.setItemHalfPintHandler(props.halfPint);
     props.percentage && modalCtx.setItemPercentageHandler(props.percentage);
+    props.country && modalCtx.setItemCountryHandler(props.country);
+    props.bottle && modalCtx.setItemBottleHandler(props.bottle);
+    props.ml250 && modalCtx.setItemMl250Handler(props.ml250);
+    props.ml175 && modalCtx.setItemMl175Handler(props.ml175);
   };
 
   return (

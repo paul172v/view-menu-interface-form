@@ -28,6 +28,8 @@ import ModalEditStandardDrinksItem from "./components/modals/drinks-menu/edit--s
 import ModalPostStandardDrinksItem from "./components/modals/drinks-menu/post--standard-drinks-item/ModalPostStandardDrinksItem";
 import ModalEditStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/edit--standard-drinks-item-no-percentage/ModalEditStandardDrinksItemNoPercentage";
 import ModalPostStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/post--standard-drinks-item-no-percentage/ModalPostStandardDrinksItemNoPercentage";
+import ModalEditWineItem from "./components/modals/drinks-menu/edit--wine-item/ModalEditWineItem";
+import ModalPostWineItem from "./components/modals/drinks-menu/post--wine-item/ModalPostWineItem";
 
 import BtnPageSelect from "./components/buttons/page-select/BtnPageSelect";
 
@@ -137,6 +139,12 @@ function App() {
           <ModalEditStandardDrinksItemNoPercentage />,
           document.getElementById("modal-root")
         )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditWineItem" &&
+        ReactDOM.createPortal(
+          <ModalEditWineItem />,
+          document.getElementById("modal-root")
+        )}
 
       {/***** Post Modals ******/}
       {ctx.modalActive === true &&
@@ -191,6 +199,12 @@ function App() {
         ctx.modalType === "PostStandardDrinksItemNoPercentage" &&
         ReactDOM.createPortal(
           <ModalPostStandardDrinksItemNoPercentage />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostWineItem" &&
+        ReactDOM.createPortal(
+          <ModalPostWineItem />,
           document.getElementById("modal-root")
         )}
     </React.Fragment>

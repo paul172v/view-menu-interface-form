@@ -12,6 +12,8 @@ import NameAndPriceItem from "../../components/drinks-menu/name-and-price-item/N
 import StandardDrinksItemHeadings from "../../components/drinks-menu/standard-drinks-item-headings/StandardDrinksItemHeadings";
 import StandardDrinksItem from "../../components/drinks-menu/standard-drinks-item/StandardDrinksItem";
 import StandardDrinksItemNoPercentage from "../../components/drinks-menu/standard-drinks-item-no-percentage/StandardDrinksItemNoPercentage";
+import WineItemHeadings from "../../components/drinks-menu/wine-item/wine-item-headings/WineItemHeadings";
+import WineItem from "../../components/drinks-menu/wine-item/wine-item-item/WineItem";
 
 const DrinksMenu = () => {
   const drinksMenuCtx = useContext(drinksMenuContext);
@@ -195,6 +197,158 @@ const DrinksMenu = () => {
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/drinks-menu/vodka"
                 type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Spirits ---*/}
+              <h3 className={classes.h3}>Spirits</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.spiritsArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/spirits"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/spirits"
+                type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Shooters ---*/}
+              <h3 className={classes.h3}>Shooters</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.shootersArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/shooters"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/shooters"
+                type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Malts ---*/}
+              <h3 className={classes.h3}>Malts</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.maltsArr.map((item) => {
+                return (
+                  <StandardDrinksItem
+                    name={item.name}
+                    details={item.details}
+                    percentage={item.percentage}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/malts"
+                    key={item._id}
+                    modalType="EditStandardDrinksItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/malts"
+                type="PostStandardDrinksItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Red Wine ---*/}
+              <h3 className={classes.h3}>Red Wine</h3>
+              <WineItemHeadings />
+              {drinksMenuCtx.state.redWineArr.map((item) => {
+                return (
+                  <WineItem
+                    name={item.name}
+                    details={item.details}
+                    country={item.country}
+                    bottle={item.bottle}
+                    ml250={item.ml250}
+                    ml175={item.ml175}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/red-wine"
+                    key={item._id}
+                    modalType="EditWineItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/red-wine"
+                type="PostWineItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Rose Wine ---*/}
+              <h3 className={classes.h3}>Rosé Wine</h3>
+              <WineItemHeadings />
+              {drinksMenuCtx.state.roseWineArr.map((item) => {
+                return (
+                  <WineItem
+                    name={item.name}
+                    details={item.details}
+                    country={item.country}
+                    bottle={item.bottle}
+                    ml250={item.ml250}
+                    ml175={item.ml175}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/rose-wine"
+                    key={item._id}
+                    modalType="EditWineItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/rose-wine"
+                type="PostWineItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- White Wine ---*/}
+              <h3 className={classes.h3}>White Wine</h3>
+              <WineItemHeadings />
+              {drinksMenuCtx.state.whiteWineArr.map((item) => {
+                return (
+                  <WineItem
+                    name={item.name}
+                    details={item.details}
+                    country={item.country}
+                    bottle={item.bottle}
+                    ml250={item.ml250}
+                    ml175={item.ml175}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/white-wine"
+                    key={item._id}
+                    modalType="EditWineItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/white-wine"
+                type="PostWineItem"
                 menuType="drinks-menu"
               />
             </section>
