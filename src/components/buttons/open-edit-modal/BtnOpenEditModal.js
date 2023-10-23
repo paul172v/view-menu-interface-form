@@ -11,16 +11,7 @@ const BtnOpenEditModal = (props) => {
     modalCtx.setItemIdHandler(props.itemId);
     modalCtx.setFetchUrlHandler(props.url);
     modalCtx.setMenuTypeHandler(props.menuType);
-    props.modalType === "EditStandardItem" &&
-      modalCtx.setModalTypeHandler("EditStandardItem");
-    props.modalType === "EditStandardItemWithAdds" &&
-      modalCtx.setModalTypeHandler("EditStandardItemWithAdds");
-    props.modalType === "EditStandardItemNoDetails" &&
-      modalCtx.setModalTypeHandler("EditStandardItemNoDetails");
-    props.modalType === "EditStandardItemWithScoops" &&
-      modalCtx.setModalTypeHandler("EditStandardItemWithScoops");
-    props.modalType === "EditMakeAMealItem" &&
-      modalCtx.setModalTypeHandler("EditMakeAMealItem");
+    modalCtx.setModalTypeHandler(props.modalType);
     modalCtx.turnOnModalHandler();
 
     props.name && modalCtx.setItemNameHandler(props.name);
@@ -47,6 +38,9 @@ const BtnOpenEditModal = (props) => {
     props.scoops1Price === "" && modalCtx.setItemScoops1PriceHandler("");
     props.scoops2Amount === "" && modalCtx.setItemScoops2AmountHandler("");
     props.scoops2Price === "" && modalCtx.setItemScoops2PriceHandler("");
+    props.pint && modalCtx.setItemPintHandler(props.pint);
+    props.halfPint && modalCtx.setItemHalfPintHandler(props.halfPint);
+    props.percentage && modalCtx.setItemPercentageHandler(props.percentage);
   };
 
   return (

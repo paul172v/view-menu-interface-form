@@ -24,6 +24,9 @@ const ModalContext = React.createContext({
   itemScoops1Price: null,
   itemScoops2Amount: null,
   itemScoops2Price: null,
+  itemPint: null,
+  itemHalfPint: null,
+  itemPercentage: null,
 
   setItemNameHandler: () => {},
   setItemDetailsHandler: () => {},
@@ -38,6 +41,9 @@ const ModalContext = React.createContext({
   setItemScoops1PriceHandler: () => {},
   setItemScoops2AmountHandler: () => {},
   setItemScoops2PriceHandler: () => {},
+  setItemPintHandler: () => {},
+  setItemHalfPintHandler: () => {},
+  setItemPercentageHandler: () => {},
 });
 
 export const ModalContextProvider = (props) => {
@@ -58,6 +64,9 @@ export const ModalContextProvider = (props) => {
   const [itemScoops1Price, setItemScoops1Price] = useState(null);
   const [itemScoops2Amount, setItemScoops2Amount] = useState(null);
   const [itemScoops2Price, setItemScoops2Price] = useState(null);
+  const [itemPint, setItemPint] = useState(null);
+  const [itemHalfPint, setItemHalfPint] = useState(null);
+  const [itemPercentage, setItemPercentage] = useState(null);
 
   const turnOnModalHandler = () => {
     setModalActive(true);
@@ -131,6 +140,18 @@ export const ModalContextProvider = (props) => {
     setItemScoops2Price(price);
   };
 
+  const setItemPintHandler = (price) => {
+    setItemPint(price);
+  };
+
+  const setItemHalfPintHandler = (price) => {
+    setItemHalfPint(price);
+  };
+
+  const setItemPercentageHandler = (percentage) => {
+    setItemPercentage(percentage);
+  };
+
   return (
     <ModalContext.Provider
       value={{
@@ -156,6 +177,9 @@ export const ModalContextProvider = (props) => {
         itemScoops1Price,
         itemScoops2Amount,
         itemScoops2Price,
+        itemPint,
+        itemHalfPint,
+        itemPercentage,
         setItemNameHandler,
         setItemDetailsHandler,
         setItemDietaryHandler,
@@ -169,6 +193,9 @@ export const ModalContextProvider = (props) => {
         setItemScoops1PriceHandler,
         setItemScoops2AmountHandler,
         setItemScoops2PriceHandler,
+        setItemPintHandler,
+        setItemHalfPintHandler,
+        setItemPercentageHandler,
       }}
     >
       {props.children}
