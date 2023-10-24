@@ -273,7 +273,7 @@ const MainMenu = () => {
                     scoops1Amount={item.scoops[0] ? item.scoops[0].amount : ""}
                     scoops1Price={item.scoops[0] ? item.scoops[0].price : ""}
                     scoops2Amount={item.scoops[1] ? item.scoops[1].amount : ""}
-                    scoops2Price={item.scoops[1] ? item.scoops[1].amount : ""}
+                    scoops2Price={item.scoops[1] ? item.scoops[1].price : ""}
                     menuType="main-menu"
                   />
                 );
