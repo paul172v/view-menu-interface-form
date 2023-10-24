@@ -37,7 +37,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/starters"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/starters"
                     key={item._id}
                     modalType="EditStandardItem"
                     menuType="kids-menu"
@@ -45,7 +45,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/starters"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/starters"
                 type="PostStandardItem"
                 menuType="kids-menu"
               />
@@ -62,7 +62,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/mains"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/mains"
                     key={item._id}
                     modalType="EditStandardItem"
                     menuType="kids-menu"
@@ -70,7 +70,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/mains"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/mains"
                 type="PostStandardItem"
                 menuType="kids-menu"
               />
@@ -87,7 +87,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-mains"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-mains"
                     key={item._id}
                     modalType="EditMakeAMealItem"
                     menuType="kids-menu"
@@ -95,7 +95,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-mains"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-mains"
                 type="PostMakeAMealItem"
                 menuType="kids-menu"
               />
@@ -112,7 +112,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-sides"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-sides"
                     key={item._id}
                     modalType="EditMakeAMealItem"
                     menuType="kids-menu"
@@ -120,7 +120,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-sides"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-sides"
                 type="PostMakeAMealItem"
                 menuType="kids-menu"
               />
@@ -137,7 +137,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-extras"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-extras"
                     key={item._id}
                     modalType="EditMakeAMealItem"
                     menuType="kids-menu"
@@ -145,7 +145,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/make-a-meal-extras"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/make-a-meal-extras"
                 type="PostMakeAMealItem"
                 menuType="kids-menu"
               />
@@ -162,7 +162,7 @@ const KidsMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/kids-menu/desserts"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/desserts"
                     key={item._id}
                     modalType="EditStandardItem"
                     menuType="kids-menu"
@@ -170,7 +170,7 @@ const KidsMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/kids-menu/desserts"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/kids-menu/desserts"
                 type="PostStandardItem"
                 menuType="kids-menu"
               />

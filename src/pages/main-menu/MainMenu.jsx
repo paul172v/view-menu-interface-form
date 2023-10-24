@@ -38,7 +38,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/starters"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/starters"
                     key={item._id}
                     modalType="EditStandardItem"
                     menuType="main-menu"
@@ -46,7 +46,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/starters"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/starters"
                 type="PostStandardItem"
                 menuType="main-menu"
               />
@@ -63,7 +63,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/sharers"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/sharers"
                     key={item._id}
                     modalType="EditStandardItem"
                     menuType="main-menu"
@@ -71,7 +71,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/sharers"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/sharers"
                 type="PostStandardItem"
                 menuType="main-menu"
               />
@@ -88,7 +88,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/mains"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/mains"
                     key={item._id}
                     modalType="EditStandardItemWithAdds"
                     add1Name={item.add[0] ? item.add[0].name : ""}
@@ -100,7 +100,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/mains"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/mains"
                 type="PostStandardItemWithAdds"
                 menuType="main-menu"
               />
@@ -116,7 +116,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/salads"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/salads"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
                     menuType="main-menu"
@@ -124,7 +124,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/salads"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/salads"
                 type="PostStandardItemNoDetails"
                 menuType="main-menu"
               />
@@ -140,7 +140,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/steaks"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/steaks"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
                     menuType="main-menu"
@@ -148,7 +148,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/steaks"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/steaks"
                 type="PostStandardItemNoDetails"
                 menuType="main-menu"
               />
@@ -164,7 +164,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/steak-sides"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/steak-sides"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
                     menuType="main-menu"
@@ -172,7 +172,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/steak-sides"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/steak-sides"
                 type="PostStandardItemNoDetails"
                 menuType="main-menu"
               />
@@ -189,7 +189,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/burgers"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/burgers"
                     key={item._id}
                     modalType="EditStandardItemWithAdds"
                     add1Name={item.add[0] ? item.add[0].name : ""}
@@ -201,7 +201,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/burgers"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/burgers"
                 type="PostStandardItemWithAdds"
                 menuType="main-menu"
               />
@@ -217,7 +217,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/sides"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/sides"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
                     menuType="main-menu"
@@ -225,7 +225,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/sides"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/sides"
                 type="PostStandardItemNoDetails"
                 menuType="main-menu"
               />
@@ -242,7 +242,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/loaded-fries"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/loaded-fries"
                     key={item._id}
                     modalType="EditStandardItemNoDetails"
                     menuType="main-menu"
@@ -250,7 +250,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/loaded-fries"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/loaded-fries"
                 type="PostStandardItemNoDetails"
                 menuType="main-menu"
               />
@@ -267,7 +267,7 @@ const MainMenu = () => {
                     dietary={item.dietary}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/main-menu/desserts"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/desserts"
                     key={item._id}
                     modalType="EditStandardItemWithScoops"
                     scoops1Amount={item.scoops[0] ? item.scoops[0].amount : ""}
@@ -279,7 +279,7 @@ const MainMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/main-menu/desserts"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/main-menu/desserts"
                 type="PostStandardItemWithScoops"
                 menuType="main-menu"
               />

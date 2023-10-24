@@ -46,7 +46,7 @@ const DrinksMenu = () => {
                     pint={item.pint}
                     halfPint={item.halfPint}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/draught-beer-and-cider"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/draught-beer-and-cider"
                     key={item._id}
                     modalType="EditDraughtBeerAndCiderItem"
                     menuType="drinks-menu"
@@ -54,7 +54,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/draught-beer-and-cider"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/draught-beer-and-cider"
                 type="PostDraughtBeerAndCiderItem"
                 menuType="drinks-menu"
               />
@@ -69,7 +69,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/bottled-beer-and-cider"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/bottled-beer-and-cider"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -77,7 +77,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/bottled-beer-and-cider"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/bottled-beer-and-cider"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -94,7 +94,7 @@ const DrinksMenu = () => {
                     percentage={item.percentage}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/scottish-fyne-ales"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/scottish-fyne-ales"
                     key={item._id}
                     modalType="EditStandardDrinksItem"
                     menuType="drinks-menu"
@@ -102,7 +102,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/scottish-fyne-ales"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/scottish-fyne-ales"
                 type="PostStandardDrinksItem"
                 menuType="drinks-menu"
               />
@@ -119,7 +119,7 @@ const DrinksMenu = () => {
                     percentage={item.percentage}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/gins"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/gins"
                     key={item._id}
                     modalType="EditStandardDrinksItem"
                     menuType="drinks-menu"
@@ -127,7 +127,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/gins"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/gins"
                 type="PostStandardDrinksItem"
                 menuType="drinks-menu"
               />
@@ -144,7 +144,7 @@ const DrinksMenu = () => {
                     percentage={item.percentage}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/cocktails"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/cocktails"
                     key={item._id}
                     modalType="EditStandardDrinksItemNoPercentage"
                     menuType="drinks-menu"
@@ -152,7 +152,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/cocktails"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/cocktails"
                 type="PostStandardDrinksItemNoPercentage"
                 menuType="drinks-menu"
               />
@@ -169,7 +169,7 @@ const DrinksMenu = () => {
                     percentage={item.percentage}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/frozen-cocktails"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/frozen-cocktails"
                     key={item._id}
                     modalType="EditStandardDrinksItemNoPercentage"
                     menuType="drinks-menu"
@@ -177,7 +177,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/frozen-cocktails"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/frozen-cocktails"
                 type="PostStandardDrinksItemNoPercentage"
                 menuType="drinks-menu"
               />
@@ -192,7 +192,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/vodka"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/vodka"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -200,7 +200,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/vodka"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/vodka"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -215,7 +215,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/spirits"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/spirits"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -223,7 +223,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/spirits"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/spirits"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -238,7 +238,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/shooters"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/shooters"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -246,7 +246,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/shooters"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/shooters"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -263,7 +263,7 @@ const DrinksMenu = () => {
                     percentage={item.percentage}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/malts"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/malts"
                     key={item._id}
                     modalType="EditStandardDrinksItem"
                     menuType="drinks-menu"
@@ -271,7 +271,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/malts"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/malts"
                 type="PostStandardDrinksItem"
                 menuType="drinks-menu"
               />
@@ -290,7 +290,7 @@ const DrinksMenu = () => {
                     ml250={item.ml250}
                     ml175={item.ml175}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/red-wine"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/red-wine"
                     key={item._id}
                     modalType="EditWineItem"
                     menuType="drinks-menu"
@@ -298,7 +298,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/red-wine"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/red-wine"
                 type="PostWineItem"
                 menuType="drinks-menu"
               />
@@ -317,7 +317,7 @@ const DrinksMenu = () => {
                     ml250={item.ml250}
                     ml175={item.ml175}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/rose-wine"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/rose-wine"
                     key={item._id}
                     modalType="EditWineItem"
                     menuType="drinks-menu"
@@ -325,7 +325,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/rose-wine"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/rose-wine"
                 type="PostWineItem"
                 menuType="drinks-menu"
               />
@@ -344,7 +344,7 @@ const DrinksMenu = () => {
                     ml250={item.ml250}
                     ml175={item.ml175}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/white-wine"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/white-wine"
                     key={item._id}
                     modalType="EditWineItem"
                     menuType="drinks-menu"
@@ -352,7 +352,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/white-wine"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/white-wine"
                 type="PostWineItem"
                 menuType="drinks-menu"
               />
@@ -369,7 +369,7 @@ const DrinksMenu = () => {
                     centiliter={item.centiliter}
                     bottle={item.bottle}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/sparkling-wine"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/sparkling-wine"
                     key={item._id}
                     modalType="EditSparklingWineItem"
                     menuType="drinks-menu"
@@ -377,7 +377,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/sparkling-wine"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/sparkling-wine"
                 type="PostSparklingWineItem"
                 menuType="drinks-menu"
               />
@@ -393,7 +393,7 @@ const DrinksMenu = () => {
                     details={item.details}
                     bottle={item.bottle}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/champagne"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/champagne"
                     key={item._id}
                     modalType="EditChampagneItem"
                     menuType="drinks-menu"
@@ -401,7 +401,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/champagne"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/champagne"
                 type="PostChampagneItem"
                 menuType="drinks-menu"
               />
@@ -416,7 +416,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/mixers"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/mixers"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -424,7 +424,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/mixers"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/mixers"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -440,7 +440,7 @@ const DrinksMenu = () => {
                     oz10={item.oz10}
                     oz16={item.oz16}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-10oz"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-10oz"
                     key={item._id}
                     modalType="EditSoftDrinks10ozItem"
                     menuType="drinks-menu"
@@ -448,7 +448,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-10oz"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-10oz"
                 type="PostSoftDrinks10ozItem"
                 menuType="drinks-menu"
               />
@@ -463,7 +463,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-330ml"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-330ml"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -471,7 +471,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-330ml"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-330ml"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -486,7 +486,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-275ml"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-275ml"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -494,7 +494,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-275ml"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-275ml"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
@@ -509,7 +509,7 @@ const DrinksMenu = () => {
                     name={item.name}
                     price={item.price}
                     itemId={item._id}
-                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-250ml"
+                    url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-250ml"
                     key={item._id}
                     modalType="EditNameAndPriceItem"
                     menuType="drinks-menu"
@@ -517,7 +517,7 @@ const DrinksMenu = () => {
                 );
               })}
               <BtnOpenAddItem
-                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-250ml"
+                url="https://view-backend-172v-e190af3eb261.herokuapp.com/api/v1/drinks-menu/soft-drinks-250ml"
                 type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
