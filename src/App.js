@@ -10,26 +10,32 @@ import DrinksMenu from "./pages/drinks-menu/DrinksMenu";
 
 import ModalBackground from "./components/modals/modal-background/ModalBackground";
 import ModalDeleteItem from "./components/modals/delete-item/ModalDeleteItem";
-import ModalEditStandardItem from "./components/modals/main-menu/edit--standard-item/ModalEditStandardItem";
-import ModalPostStandardItem from "./components/modals/main-menu/post--standard-item/ModalPostStandardItem";
-import ModalEditStandardItemWithAdds from "./components/modals/main-menu/edit--standard-item-with-adds/ModalEditStandardItemWithAdds";
-import ModalPostStandardItemWithAdds from "./components/modals/main-menu/post--standard-item-with-adds/ModalPostStandardItemWithAdds";
-import ModalEditStandardItemNoDetails from "./components/modals/main-menu/edit--standard-item-no-details/ModalEditStandardItemNoDetails";
-import ModalPostStandardItemNoDetails from "./components/modals/main-menu/post--standard-item-no-details/ModalPostStandardItemNoDetails";
-import ModalEditStandardItemWithScoops from "./components/modals/main-menu/edit-standard-item-with-scoops/ModalEditStandardItemWithScoops";
-import ModalPostStandardItemWithScoops from "./components/modals/main-menu/post--standard-item-with-scoops/ModalPostStandardItemWithScoops";
+import ModalEditStandardItem from "./components/modals/main-menu/edit/edit--standard-item/ModalEditStandardItem";
+import ModalPostStandardItem from "./components/modals/main-menu/post/post--standard-item/ModalPostStandardItem";
+import ModalEditStandardItemWithAdds from "./components/modals/main-menu/edit/edit--standard-item-with-adds/ModalEditStandardItemWithAdds";
+import ModalPostStandardItemWithAdds from "./components/modals/main-menu/post/post--standard-item-with-adds/ModalPostStandardItemWithAdds";
+import ModalEditStandardItemNoDetails from "./components/modals/main-menu/edit/edit--standard-item-no-details/ModalEditStandardItemNoDetails";
+import ModalPostStandardItemNoDetails from "./components/modals/main-menu/post/post--standard-item-no-details/ModalPostStandardItemNoDetails";
+import ModalEditStandardItemWithScoops from "./components/modals/main-menu/edit/edit-standard-item-with-scoops/ModalEditStandardItemWithScoops";
+import ModalPostStandardItemWithScoops from "./components/modals/main-menu/post/post--standard-item-with-scoops/ModalPostStandardItemWithScoops";
 import ModalEditMakeAMealItem from "./components/modals/kids-menu/edit--make-a-meal-item/ModalEditMakeAMealItem";
 import ModalPostMakeAMealItem from "./components/modals/kids-menu/post--standard-item/ModalPostStandardItem";
-import ModalEditDraughtBeerAndCiderItem from "./components/modals/drinks-menu/edit--draught-beer-and-cider-item/ModalEditDraughtBeerAndCiderItem";
-import ModalPostDraughtBeerAndCiderItem from "./components/modals/drinks-menu/post--draught-beer-and-cider-item/ModalPostDraughtBeerAndCiderItem";
-import ModalEditNameAndPriceItem from "./components/modals/drinks-menu/edit--name-and-price-item/ModalEditNameAndPriceItem";
-import ModalPostNameAndPriceItem from "./components/modals/drinks-menu/post--name-and-price-item/ModalPostNameAndPriceItem";
-import ModalEditStandardDrinksItem from "./components/modals/drinks-menu/edit--standard-drinks-item/ModalEditStandardDrinksItem";
-import ModalPostStandardDrinksItem from "./components/modals/drinks-menu/post--standard-drinks-item/ModalPostStandardDrinksItem";
-import ModalEditStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/edit--standard-drinks-item-no-percentage/ModalEditStandardDrinksItemNoPercentage";
-import ModalPostStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/post--standard-drinks-item-no-percentage/ModalPostStandardDrinksItemNoPercentage";
-import ModalEditWineItem from "./components/modals/drinks-menu/edit--wine-item/ModalEditWineItem";
-import ModalPostWineItem from "./components/modals/drinks-menu/post--wine-item/ModalPostWineItem";
+import ModalEditDraughtBeerAndCiderItem from "./components/modals/drinks-menu/edit/edit--draught-beer-and-cider-item/ModalEditDraughtBeerAndCiderItem";
+import ModalPostDraughtBeerAndCiderItem from "./components/modals/drinks-menu/post/post--draught-beer-and-cider-item/ModalPostDraughtBeerAndCiderItem";
+import ModalEditNameAndPriceItem from "./components/modals/drinks-menu/edit/edit--name-and-price-item/ModalEditNameAndPriceItem";
+import ModalPostNameAndPriceItem from "./components/modals/drinks-menu/post/post--name-and-price-item/ModalPostNameAndPriceItem";
+import ModalEditStandardDrinksItem from "./components/modals/drinks-menu/edit/edit--standard-drinks-item/ModalEditStandardDrinksItem";
+import ModalPostStandardDrinksItem from "./components/modals/drinks-menu/post/post--standard-drinks-item/ModalPostStandardDrinksItem";
+import ModalEditStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/edit/edit--standard-drinks-item-no-percentage/ModalEditStandardDrinksItemNoPercentage";
+import ModalPostStandardDrinksItemNoPercentage from "./components/modals/drinks-menu/post/post--standard-drinks-item-no-percentage/ModalPostStandardDrinksItemNoPercentage";
+import ModalEditWineItem from "./components/modals/drinks-menu/edit/edit--wine-item/ModalEditWineItem";
+import ModalPostWineItem from "./components/modals/drinks-menu/post/post--wine-item/ModalPostWineItem";
+import ModalEditSparklingWineItem from "./components/modals/drinks-menu/edit/edit--sparkling-wine-item/ModalEditSparklingWineItem";
+import ModalPostSparklingWineItem from "./components/modals/drinks-menu/post/post--sparkling-wine-item/ModalPostSparklingWineItem";
+import ModalEditChampagneItem from "./components/modals/drinks-menu/edit/edit--champagne-item/ModalEditChampagneItem";
+import ModalPostChampagneItem from "./components/modals/drinks-menu/post/post--champagne-item/ModalPostChampagneItem";
+import ModalEditSoftDrinks10ozItem from "./components/modals/drinks-menu/edit/edit--soft-drinks-10oz/ModalEditSoftDrinks10ozItem";
+import ModalPostSoftDrinks10ozItem from "./components/modals/drinks-menu/post/post--soft-drinks-10oz/ModalPostSoftDrinks10ozItem";
 
 import BtnPageSelect from "./components/buttons/page-select/BtnPageSelect";
 
@@ -145,6 +151,24 @@ function App() {
           <ModalEditWineItem />,
           document.getElementById("modal-root")
         )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditSparklingWineItem" &&
+        ReactDOM.createPortal(
+          <ModalEditSparklingWineItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditChampagneItem" &&
+        ReactDOM.createPortal(
+          <ModalEditChampagneItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "EditSoftDrinks10ozItem" &&
+        ReactDOM.createPortal(
+          <ModalEditSoftDrinks10ozItem />,
+          document.getElementById("modal-root")
+        )}
 
       {/***** Post Modals ******/}
       {ctx.modalActive === true &&
@@ -205,6 +229,24 @@ function App() {
         ctx.modalType === "PostWineItem" &&
         ReactDOM.createPortal(
           <ModalPostWineItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostSparklingWineItem" &&
+        ReactDOM.createPortal(
+          <ModalPostSparklingWineItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostChampagneItem" &&
+        ReactDOM.createPortal(
+          <ModalPostChampagneItem />,
+          document.getElementById("modal-root")
+        )}
+      {ctx.modalActive === true &&
+        ctx.modalType === "PostSoftDrinks10ozItem" &&
+        ReactDOM.createPortal(
+          <ModalPostSoftDrinks10ozItem />,
           document.getElementById("modal-root")
         )}
     </React.Fragment>

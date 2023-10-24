@@ -21,6 +21,13 @@ const initState = {
   redWineArr: null,
   roseWineArr: null,
   whiteWineArr: null,
+  sparklingWineArr: null,
+  champagneArr: null,
+  mixersArr: null,
+  softDrinks10ozArr: null,
+  softDrinks330mlArr: null,
+  softDrinks275mlArr: null,
+  softDrinks250mlArr: null,
 };
 
 const reducer = (state, { type, value }) => {
@@ -56,6 +63,20 @@ const reducer = (state, { type, value }) => {
       return { ...state, roseWineArr: value };
     case "updateWhiteWineArr":
       return { ...state, whiteWineArr: value };
+    case "updateSparklingWineArr":
+      return { ...state, sparklingWineArr: value };
+    case "updateChampagneArr":
+      return { ...state, champagneArr: value };
+    case "updateMixersArr":
+      return { ...state, mixersArr: value };
+    case "updateSoftDrinks10ozArr":
+      return { ...state, softDrinks10ozArr: value };
+    case "updateSoftDrinks330mlArr":
+      return { ...state, softDrinks330mlArr: value };
+    case "updateSoftDrinks275mlArr":
+      return { ...state, softDrinks275mlArr: value };
+    case "updateSoftDrinks250mlArr":
+      return { ...state, softDrinks250mlArr: value };
 
     default:
       throw new Error();
@@ -100,6 +121,19 @@ export const DrinksMenuContextProvider = (props) => {
         updateRedWineArrHandler(dataObj.payload.data.redWineArr);
         updateRoseWineArrHandler(dataObj.payload.data.roseWineArr);
         updateWhiteWineArrHandler(dataObj.payload.data.whiteWineArr);
+        updateSparklingWineArrHandler(dataObj.payload.data.sparklingWineArr);
+        updateChampagneArrHandler(dataObj.payload.data.champagneArr);
+        updateMixersArrHandler(dataObj.payload.data.mixersArr);
+        updateSoftDrinks10ozArrHandler(dataObj.payload.data.softDrinks10ozArr);
+        updateSoftDrinks330mlArrHandler(
+          dataObj.payload.data.softDrinks330mlArr
+        );
+        updateSoftDrinks275mlArrHandler(
+          dataObj.payload.data.softDrinks275mlArr
+        );
+        updateSoftDrinks250mlArrHandler(
+          dataObj.payload.data.softDrinks250mlArr
+        );
 
         setMenusLoadedHandler(true);
       })
@@ -149,6 +183,27 @@ export const DrinksMenuContextProvider = (props) => {
 
   const updateWhiteWineArrHandler = (arr) =>
     dispatch({ type: "updateWhiteWineArr", value: arr });
+
+  const updateSparklingWineArrHandler = (arr) =>
+    dispatch({ type: "updateSparklingWineArr", value: arr });
+
+  const updateChampagneArrHandler = (arr) =>
+    dispatch({ type: "updateChampagneArr", value: arr });
+
+  const updateMixersArrHandler = (arr) =>
+    dispatch({ type: "updateMixersArr", value: arr });
+
+  const updateSoftDrinks10ozArrHandler = (arr) =>
+    dispatch({ type: "updateSoftDrinks10ozArr", value: arr });
+
+  const updateSoftDrinks330mlArrHandler = (arr) =>
+    dispatch({ type: "updateSoftDrinks330mlArr", value: arr });
+
+  const updateSoftDrinks275mlArrHandler = (arr) =>
+    dispatch({ type: "updateSoftDrinks275mlArr", value: arr });
+
+  const updateSoftDrinks250mlArrHandler = (arr) =>
+    dispatch({ type: "updateSoftDrinks250mlArr", value: arr });
 
   return (
     <DrinksMenuContext.Provider

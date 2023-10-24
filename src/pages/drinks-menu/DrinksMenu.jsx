@@ -14,6 +14,11 @@ import StandardDrinksItem from "../../components/drinks-menu/standard-drinks-ite
 import StandardDrinksItemNoPercentage from "../../components/drinks-menu/standard-drinks-item-no-percentage/StandardDrinksItemNoPercentage";
 import WineItemHeadings from "../../components/drinks-menu/wine-item/wine-item-headings/WineItemHeadings";
 import WineItem from "../../components/drinks-menu/wine-item/wine-item-item/WineItem";
+import SparklingWineHeadings from "../../components/drinks-menu/sparkling-wine/sparkling-wine-headings/SparklingWineHeadings";
+import SparklingWineItem from "../../components/drinks-menu/sparkling-wine/sparkling-wine-item/SparklingWineItem";
+import ChampagneItem from "../../components/drinks-menu/champagne-item/ChampagneItem";
+import SoftDrinks10ozHeadings from "../../components/drinks-menu/soft-drinks-10oz/soft-drinks-10oz-headings/SoftDrinks10ozHeadings";
+import SoftDrinks10ozItem from "../../components/drinks-menu/soft-drinks-10oz/soft-drinks-10oz-item/SoftDrinks10ozItem";
 
 const DrinksMenu = () => {
   const drinksMenuCtx = useContext(drinksMenuContext);
@@ -349,6 +354,171 @@ const DrinksMenu = () => {
               <BtnOpenAddItem
                 url="http://127.0.0.1:5000/api/v1/drinks-menu/white-wine"
                 type="PostWineItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Sparkling Wine ---*/}
+              <h3 className={classes.h3}>Sparkling Wine</h3>
+              <SparklingWineHeadings />
+              {drinksMenuCtx.state.sparklingWineArr.map((item) => {
+                return (
+                  <SparklingWineItem
+                    name={item.name}
+                    details={item.details}
+                    centiliter={item.centiliter}
+                    bottle={item.bottle}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/sparkling-wine"
+                    key={item._id}
+                    modalType="EditSparklingWineItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/sparkling-wine"
+                type="PostSparklingWineItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Champagne ---*/}
+              <h3 className={classes.h3}>Champagne</h3>
+              <SparklingWineHeadings />
+              {drinksMenuCtx.state.champagneArr.map((item) => {
+                return (
+                  <ChampagneItem
+                    name={item.name}
+                    details={item.details}
+                    bottle={item.bottle}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/champagne"
+                    key={item._id}
+                    modalType="EditChampagneItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/champagne"
+                type="PostChampagneItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Mixers ---*/}
+              <h3 className={classes.h3}>Mixers</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.mixersArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/mixers"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/mixers"
+                type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Soft Drinks: 10oz & 16oz ---*/}
+              <h3 className={classes.h3}>Soft Drinks: 10oz & 16oz</h3>
+              <SoftDrinks10ozHeadings />
+              {drinksMenuCtx.state.softDrinks10ozArr.map((item) => {
+                return (
+                  <SoftDrinks10ozItem
+                    name={item.name}
+                    oz10={item.oz10}
+                    oz16={item.oz16}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-10oz"
+                    key={item._id}
+                    modalType="EditSoftDrinks10ozItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-10oz"
+                type="PostSoftDrinks10ozItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Soft Drinks: 330ml ---*/}
+              <h3 className={classes.h3}>Soft Drinks: 330ml</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.softDrinks330mlArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-330ml"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-330ml"
+                type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Soft Drinks: 275ml ---*/}
+              <h3 className={classes.h3}>Soft Drinks: 275ml</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.softDrinks275mlArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-275ml"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-275ml"
+                type="PostNameAndPriceItem"
+                menuType="drinks-menu"
+              />
+            </section>
+            <section className={classes.section}>
+              {/*--- Soft Drinks: 250ml ---*/}
+              <h3 className={classes.h3}>Soft Drinks: 250ml</h3>
+              <StandardDrinksItemHeadings />
+              {drinksMenuCtx.state.softDrinks250mlArr.map((item) => {
+                return (
+                  <NameAndPriceItem
+                    name={item.name}
+                    price={item.price}
+                    itemId={item._id}
+                    url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-250ml"
+                    key={item._id}
+                    modalType="EditNameAndPriceItem"
+                    menuType="drinks-menu"
+                  />
+                );
+              })}
+              <BtnOpenAddItem
+                url="http://127.0.0.1:5000/api/v1/drinks-menu/soft-drinks-250ml"
+                type="PostNameAndPriceItem"
                 menuType="drinks-menu"
               />
             </section>

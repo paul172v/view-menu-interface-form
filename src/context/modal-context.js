@@ -31,6 +31,9 @@ const ModalContext = React.createContext({
   itemBottle: null,
   itemMl250: null,
   itemMl175: null,
+  itemCentiliter: null,
+  itemOz10: null,
+  itemOz16: null,
 
   setItemNameHandler: () => {},
   setItemDetailsHandler: () => {},
@@ -52,6 +55,8 @@ const ModalContext = React.createContext({
   setItemBottleHandler: () => {},
   setItemMl250Handler: () => {},
   setItemMl175Handler: () => {},
+  setItemCentiliterHandler: () => {},
+  setItemOz10Handler: () => {},
 });
 
 export const ModalContextProvider = (props) => {
@@ -79,6 +84,9 @@ export const ModalContextProvider = (props) => {
   const [itemBottle, setItemBottle] = useState(null);
   const [itemMl250, setItemMl250] = useState(null);
   const [itemMl175, setItemMl175] = useState(null);
+  const [itemCentiliter, setItemCentiliter] = useState(null);
+  const [itemOz10, setItemOz10] = useState(null);
+  const [itemOz16, setItemOz16] = useState(null);
 
   const turnOnModalHandler = () => {
     setModalActive(true);
@@ -180,6 +188,18 @@ export const ModalContextProvider = (props) => {
     setItemMl175(ml175);
   };
 
+  const setItemCentiliterHandler = (centiliter) => {
+    setItemCentiliter(centiliter);
+  };
+
+  const setItemOz10Handler = (oz10) => {
+    setItemOz10(oz10);
+  };
+
+  const setItemOz16Handler = (oz16) => {
+    setItemOz16(oz16);
+  };
+
   return (
     <ModalContext.Provider
       value={{
@@ -212,6 +232,9 @@ export const ModalContextProvider = (props) => {
         itemBottle,
         itemMl250,
         itemMl175,
+        itemCentiliter,
+        itemOz10,
+        itemOz16,
         setItemNameHandler,
         setItemDetailsHandler,
         setItemDietaryHandler,
@@ -232,6 +255,9 @@ export const ModalContextProvider = (props) => {
         setItemBottleHandler,
         setItemMl250Handler,
         setItemMl175Handler,
+        setItemCentiliterHandler,
+        setItemOz10Handler,
+        setItemOz16Handler,
       }}
     >
       {props.children}

@@ -45,6 +45,9 @@ const BtnOpenEditModal = (props) => {
     props.bottle && modalCtx.setItemBottleHandler(props.bottle);
     props.ml250 && modalCtx.setItemMl250Handler(props.ml250);
     props.ml175 && modalCtx.setItemMl175Handler(props.ml175);
+    props.centiliter && modalCtx.setItemCentiliterHandler(props.centiliter);
+    props.oz10 && modalCtx.setItemOz10Handler(props.oz10);
+    props.oz16 && modalCtx.setItemOz16Handler(props.oz16);
   };
 
   return (
