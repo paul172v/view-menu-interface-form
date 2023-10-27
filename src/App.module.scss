@@ -19,6 +19,12 @@
   padding-bottom: 8rem;
 }
 
+@media (max-width: 400px) {
+  .page {
+    max-width: 90vw;
+  }
+}
+
 .h1 {
   text-align: center;
   margin-top: 2rem;
