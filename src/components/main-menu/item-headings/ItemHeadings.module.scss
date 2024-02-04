@@ -26,3 +26,16 @@
 #price {
   grid-column: 4/5;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 2fr 3fr 1.5fr 1fr 1fr 1fr;
+  }
+
+  #name,
+  #details,
+  #dietary,
+  #price {
+    font-size: 1.4rem;
+  }
+}

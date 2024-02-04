@@ -25,3 +25,16 @@
 .details {
   font-size: 1.4rem;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 2fr 3.5fr 1fr 1fr 1fr 1fr;
+  }
+
+  .name,
+  .details,
+  .centiliter,
+  .price {
+    font-size: 1.4rem;
+  }
+}

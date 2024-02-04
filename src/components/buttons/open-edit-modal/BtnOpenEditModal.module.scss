@@ -14,3 +14,12 @@
 .button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid orange;
+    padding: 0 1rem;
+  }
+}

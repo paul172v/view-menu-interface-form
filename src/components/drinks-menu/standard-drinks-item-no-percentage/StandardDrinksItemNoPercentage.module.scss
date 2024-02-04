@@ -26,3 +26,16 @@
 .details {
   font-size: 1.4rem;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 1.75fr 3.5fr 1.75fr 1fr 1fr 1fr;
+  }
+
+  .name,
+  .details,
+  .price,
+  .percentage {
+    font-size: 1.4rem;
+  }
+}

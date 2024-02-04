@@ -26,3 +26,16 @@
 #bottle {
   grid-column: 4/5;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 1.75fr 2fr 1fr 1fr 1fr 1fr;
+  }
+
+  #name,
+  #details,
+  #centiliter,
+  #bottle {
+    font-size: 1.4rem;
+  }
+}

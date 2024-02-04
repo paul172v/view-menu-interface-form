@@ -15,3 +15,9 @@
 .button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .button {
+    margin-top: -6rem;
+  }
+}

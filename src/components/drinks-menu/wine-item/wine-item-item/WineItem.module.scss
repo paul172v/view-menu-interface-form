@@ -63,3 +63,24 @@
 .price {
   margin-right: 3rem;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 3fr 5fr 3fr 1fr 1fr;
+  }
+
+  .name,
+  .details {
+    font-size: 1.2rem;
+  }
+}
+
+.country {
+  font-size: 1.2rem;
+}
+
+.label,
+.price {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}

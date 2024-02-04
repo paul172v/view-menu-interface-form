@@ -26,3 +26,16 @@
 #half-pint {
   grid-column: 4/5;
 }
+
+@media (max-width: 500px) {
+  .component-wrapper {
+    grid-template-columns: 2fr 3.5fr 2fr 3fr 1fr 1fr;
+  }
+
+  #name,
+  #details,
+  #pint,
+  #half-pint {
+    font-size: 1.4rem;
+  }
+}
